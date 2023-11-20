@@ -1,11 +1,11 @@
 package org.example.comparator;
 
-import org.example.calculator.*;
+import org.example.calculator.AverageCalculator;
 
 public class ListComparator implements Comparator {
 
-    private AverageCalculator firstListCalculator;
-    private AverageCalculator secondListCalculator;
+    private final AverageCalculator firstListCalculator;
+    private final AverageCalculator secondListCalculator;
 
     public ListComparator(AverageCalculator firstListCalculator, AverageCalculator secondListCalculator) {
         if (firstListCalculator == null || secondListCalculator == null) {

@@ -1,5 +1,6 @@
 package org.example.tests;
-import org.example.calculator.*;
+
+import org.example.calculator.ListAverageCalculator;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -18,13 +19,14 @@ public class ListAverageCalculatorTest {
 
     @Test
     public void testCalculateAverageZeroValue() {
-        List<Integer> numbers = Arrays.asList();
+        List<Integer> numbers = List.of();
         ListAverageCalculator calculator = new ListAverageCalculator(numbers);
-        assertTrue(calculator.calculateAverage()==0);
+        assertEquals(0, calculator.calculateAverage(), 0.0);
     }
+
     @Test
-    public void testCalculateAverageNotNull(){
-        List<Integer> numbers = Arrays.asList();
+    public void testCalculateAverageNotNull() {
+        List<Integer> numbers = List.of();
         ListAverageCalculator calculator = new ListAverageCalculator(numbers);
         assertFalse(Double.isNaN(calculator.calculateAverage()));
     }

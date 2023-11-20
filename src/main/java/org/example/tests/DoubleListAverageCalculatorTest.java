@@ -1,11 +1,14 @@
 package org.example.tests;
-import org.example.calculator.*;
+
+import org.example.calculator.DoubleListAverageCalculator;
+import org.example.calculator.ListAverageCalculator;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
+
 public class DoubleListAverageCalculatorTest {
     @Test
     public void testCalculateAverage() {
@@ -14,15 +17,17 @@ public class DoubleListAverageCalculatorTest {
         double average = calculator.calculateAverage();
         assertEquals(3.0, average, 0.001);
     }
+
     @Test
     public void testCalculateAverageZeroValue() {
-        List<Double> numbers = Arrays.asList();
+        List<Double> numbers = List.of();
         ListAverageCalculator calculator = new DoubleListAverageCalculator(numbers);
-        assertTrue(calculator.calculateAverage()==0);
+        assertEquals(0, calculator.calculateAverage(), 0.0);
     }
+
     @Test
-    public void testCalculateAverageNotNull(){
-        List<Double> numbers = Arrays.asList();
+    public void testCalculateAverageNotNull() {
+        List<Double> numbers = List.of();
         ListAverageCalculator calculator = new DoubleListAverageCalculator(numbers);
         assertFalse(Double.isNaN(calculator.calculateAverage()));
     }

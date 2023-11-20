@@ -5,7 +5,7 @@ import java.util.List;
 public class DoubleListAverageCalculator extends ListAverageCalculator {
     public DoubleListAverageCalculator(List<Double> numbers) {
 
-        super (numbers);
+        super(numbers);
     }
 
     @Override

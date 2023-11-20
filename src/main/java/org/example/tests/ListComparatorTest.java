@@ -1,11 +1,14 @@
 package org.example.tests;
-import org.example.calculator.*;
-import org.example.comparator.*;
+
+import org.example.calculator.ListAverageCalculator;
+import org.example.comparator.ListComparator;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
 public class ListComparatorTest {
     @Test
     public void testCompareFirstLarger() {
@@ -19,6 +22,7 @@ public class ListComparatorTest {
 
         assertEquals("Первый список имеет большее среднее значение", listComparator.compare());
     }
+
     @Test
     public void testCompareSecondLarger() {
         List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
@@ -31,6 +35,7 @@ public class ListComparatorTest {
 
         assertEquals("Второй список имеет большее среднее значение", listComparator.compare());
     }
+
     @Test
     public void testCompareEqualAverages() {
         List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);

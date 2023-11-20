@@ -1,6 +1,10 @@
 package org.example;
-import org.example.calculator.*;
-import org.example.comparator.*;
+
+import org.example.calculator.AverageCalculator;
+import org.example.calculator.DoubleListAverageCalculator;
+import org.example.calculator.ListAverageCalculator;
+import org.example.comparator.Comparator;
+import org.example.comparator.ListComparator;
 
 import java.util.Arrays;
 import java.util.List;

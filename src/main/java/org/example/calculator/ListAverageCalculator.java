@@ -2,7 +2,7 @@ package org.example.calculator;
 
 import java.util.List;
 
-public class ListAverageCalculator <T extends Number> implements AverageCalculator {
+public class ListAverageCalculator<T extends Number> implements AverageCalculator {
     protected List<T> numbers;
 
     public ListAverageCalculator(List<T> numbers) {
