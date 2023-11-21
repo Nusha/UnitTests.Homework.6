@@ -7,12 +7,13 @@ public class ListComparator implements Comparator {
     private final AverageCalculator firstListCalculator;
     private final AverageCalculator secondListCalculator;
 
-    public ListComparator(AverageCalculator firstListCalculator, AverageCalculator secondListCalculator) {
-        if (firstListCalculator == null || secondListCalculator == null) {
+    public ListComparator(final AverageCalculator inFirstListCalculator, final AverageCalculator inSecondListCalculator) {
+        if (inFirstListCalculator == null || inSecondListCalculator == null) {
             throw new IllegalArgumentException("Значения списков не могут быть нулевыми");
         }
-        this.firstListCalculator = firstListCalculator;
-        this.secondListCalculator = secondListCalculator;
+        this.firstListCalculator = inFirstListCalculator;
+        this.secondListCalculator = inSecondListCalculator;
+
     }
 
     @Override
