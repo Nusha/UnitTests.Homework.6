@@ -5,8 +5,8 @@ import java.util.List;
 public class ListAverageCalculator<T extends Number> implements AverageCalculator {
     protected List<T> numbers;
 
-    public ListAverageCalculator(List<T> numbers) {
-        this.numbers = numbers;
+    public ListAverageCalculator(final List<T> inNumbers) {
+        this.numbers = inNumbers;
     }
 
     public double calculateAverage() {

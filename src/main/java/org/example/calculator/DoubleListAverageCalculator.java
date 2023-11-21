@@ -3,7 +3,7 @@ package org.example.calculator;
 import java.util.List;
 
 public class DoubleListAverageCalculator extends ListAverageCalculator {
-    public DoubleListAverageCalculator(List<Double> numbers) {
+    public DoubleListAverageCalculator(final List<Double> numbers) {
 
         super(numbers);
     }

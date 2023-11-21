@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
         List<Double> secondList = Arrays.asList(2.0, 3.0, 4.0, 5.0, 6.0);
