@@ -9,6 +9,7 @@ import org.example.comparator.ListComparator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 /**
  * Это основной класс программы калькулятора, который использует различные классы и интерфейсы из пакетов calculator и comparator.
  * Он содержит метод main(), который выполняет основную логику программы:
@@ -18,7 +19,9 @@ import java.util.Scanner;
  * 4. Выводит результат сравнения на консоль.
  */
 public class Main {
-    /** Основной метод.
+    /**
+     * Основной метод.
+     *
      * @param args не принимает никакие параметры.
      */
     public static void main(final String[] args) {

@@ -22,6 +22,7 @@ public class MainTest {
      * Этот поток используется для проверки вывода программы в тестах.
      */
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
     /**
      * Метод setUpStreams устанавливает поток вывода перед каждым тестом.
      */
@@ -46,6 +47,7 @@ public class MainTest {
         assertEquals(expectedOutput, outContent.toString());
 
     }
+
     /**
      * Метод restoreStreams восстанавливает стандартные потоки ввода и вывода после каждого теста.
      */

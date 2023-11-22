@@ -4,6 +4,7 @@ package org.example.tests;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+
 /**
  * Класс TestRunner содержит метод main, который запускает набор тестов логики приложения.
  * Результаты тестов выводятся в консоль.
@@ -12,7 +13,9 @@ import org.junit.runner.notification.Failure;
  */
 
 public class TestRunner {
-    /** Метод запускает набор тестов для проверки логики приложения.
+    /**
+     * Метод запускает набор тестов для проверки логики приложения.
+     *
      * @param args не принимает никаких аргументов из командной строки.
      */
     @SuppressWarnings("checkstyle:hideutilityclassconstructor")

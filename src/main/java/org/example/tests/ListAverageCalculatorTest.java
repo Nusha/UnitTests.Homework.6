@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+
 /**
  * Класс ListAverageCalculatorTest содержит тесты для класса ListAverageCalculator.
  *
@@ -27,6 +28,7 @@ public class ListAverageCalculatorTest {
         assertEquals(3.0, average, 0.001);
         //CHECKSTYLE:ON: checkstyle:magicnumber
     }
+
     /**
      * Тест проверяет, что среднее значение пустого списка равно 0.
      */
@@ -36,6 +38,7 @@ public class ListAverageCalculatorTest {
         ListAverageCalculator calculator = new ListAverageCalculator(numbers);
         assertEquals(0, calculator.calculateAverage(), 0.0);
     }
+
     /**
      * Тест проверяет, что среднее значение не равно NaN.
      */

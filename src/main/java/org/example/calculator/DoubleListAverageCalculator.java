@@ -1,6 +1,7 @@
 package org.example.calculator;
 
 import java.util.List;
+
 /**
  * Этот класс расширяет ListAverageCalculator и переопределяет метод calculateAverage() для работы с списком чисел типа Double.
  * Он реализует интерфейс AverageCalculator и предоставляет метод для расчета среднего значения списка чисел типа Double.
@@ -15,6 +16,7 @@ public class DoubleListAverageCalculator extends ListAverageCalculator implement
 
         super(numbers);
     }
+
     /**
      * Переопределяет метод calculateAverage() из класса ListAverageCalculator для работы с числами типа Double.
      *

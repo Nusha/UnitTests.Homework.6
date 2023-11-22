@@ -29,6 +29,7 @@ public class DoubleListAverageCalculatorTest {
         assertEquals(3.0, average, 0.001);
         //CHECKSTYLE:ON: checkstyle:magicnumber
     }
+
     /**
      * Тест проверяет, что среднее значение пустого списка равно 0.
      */
@@ -38,6 +39,7 @@ public class DoubleListAverageCalculatorTest {
         ListAverageCalculator calculator = new DoubleListAverageCalculator(numbers);
         assertEquals(0, calculator.calculateAverage(), 0.0);
     }
+
     /**
      * Тест проверяет, что среднее значение не равно NaN.
      */

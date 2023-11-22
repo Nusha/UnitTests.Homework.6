@@ -1,6 +1,7 @@
 package org.example.calculator;
 
 import java.util.List;
+
 /**
  * Этот класс используется для расчета среднего значения списка чисел.
  * Он реализует интерфейс AverageCalculator и предоставляет метод для расчета среднего значения списка.
@@ -12,6 +13,7 @@ public class ListAverageCalculator<T extends Number> implements AverageCalculato
      * Список чисел, для которых рассчитывается среднее значение.
      */
     protected List<T> numbers;
+
     /**
      * Конструктор для ListAverageCalculator.
      *
@@ -20,6 +22,7 @@ public class ListAverageCalculator<T extends Number> implements AverageCalculato
     public ListAverageCalculator(final List<T> inNumbers) {
         this.numbers = inNumbers;
     }
+
     /**
      * Метод вычисляет среднее значение списка чисел.
      *

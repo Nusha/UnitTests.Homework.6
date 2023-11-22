@@ -2,9 +2,7 @@ package org.example.tests;
 
 import org.example.calculator.ListAverageCalculator;
 import org.example.comparator.ListComparator;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,6 +33,7 @@ public class ListComparatorTest {
 
         assertEquals("Первый список имеет большее среднее значение", listComparator.compare());
     }
+
     /**
      * Тест проверяет, что второй список имеет большее среднее значение.
      */
@@ -51,6 +50,7 @@ public class ListComparatorTest {
 
         assertEquals("Второй список имеет большее среднее значение", listComparator.compare());
     }
+
     /**
      * Тест проверяет, что средние значения двух списков равны.
      */
@@ -71,10 +71,11 @@ public class ListComparatorTest {
 
     @Test
     public void testCompareNull() {
-    assertThrows(IllegalArgumentException.class, () -> {
-        ListAverageCalculator firstListCalculator = null;
-        ListAverageCalculator secondListCalculator = null;
+        assertThrows(IllegalArgumentException.class, () -> {
+            ListAverageCalculator firstListCalculator = null;
+            ListAverageCalculator secondListCalculator = null;
 
-        ListComparator listComparator = new ListComparator(firstListCalculator, secondListCalculator);});
+            ListComparator listComparator = new ListComparator(firstListCalculator, secondListCalculator);
+        });
     }
-    }
+}
