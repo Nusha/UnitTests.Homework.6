@@ -4,8 +4,15 @@ package org.example.tests;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+/**
+ * Класс TestRunner содержит метод main, который запускает набор тестов логики приложения.
+ * Результаты тестов выводятся в консоль.
+ *
+ * @author Ivan
+ */
 
 public class TestRunner {
+    @SuppressWarnings("checkstyle:hideutilityclassconstructor")
     public static void main(final String[] args) {
         Result result = JUnitCore.runClasses(ListAverageCalculatorTest.class, DoubleListAverageCalculatorTest.class, ListComparatorTest.class);
         for (Failure failure : result.getFailures()) {

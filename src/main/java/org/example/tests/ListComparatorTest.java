@@ -9,10 +9,20 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Класс ListComparatorTest содержит тесты для класса ListComparator.
+ *
+ * @author Ivan
+ */
 public class ListComparatorTest {
+    /**
+     * Тест проверяет, что первый список имеет большее среднее значение.
+     */
+    //CHECKSTYLE:OFF: checkstyle:magicnumber
     @Test
     public void testCompareFirstLarger() {
-        List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
+        @SuppressWarnings("checkstyle:magicnumber")
+        List<Integer> firstList = Arrays.asList(10, 2, 3, 4, 5);
         List<Integer> secondList = Arrays.asList(2, 3, 4, 5, 6);
 
         ListAverageCalculator firstListCalculator = new ListAverageCalculator(firstList);
@@ -22,9 +32,12 @@ public class ListComparatorTest {
 
         assertEquals("Первый список имеет большее среднее значение", listComparator.compare());
     }
-
+    /**
+     * Тест проверяет, что второй список имеет большее среднее значение.
+     */
     @Test
     public void testCompareSecondLarger() {
+        @SuppressWarnings("checkstyle:magicnumber")
         List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> secondList = Arrays.asList(2, 3, 4, 5, 6);
 
@@ -35,10 +48,13 @@ public class ListComparatorTest {
 
         assertEquals("Второй список имеет большее среднее значение", listComparator.compare());
     }
-
+    /**
+     * Тест проверяет, что средние значения двух списков равны.
+     */
     @Test
     public void testCompareEqualAverages() {
-        List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
+        @SuppressWarnings("checkstyle:magicnumber")
+        List<Integer> firstList = Arrays.asList(6, 2, 3, 4, 5);
         List<Integer> secondList = Arrays.asList(2, 3, 4, 5, 6);
 
         ListAverageCalculator firstListCalculator = new ListAverageCalculator(firstList);
@@ -48,4 +64,5 @@ public class ListComparatorTest {
 
         assertEquals("Средние значения равны", listComparator.compare());
     }
+    //CHECKSTYLE:ON: checkstyle:magicnumber
 }
