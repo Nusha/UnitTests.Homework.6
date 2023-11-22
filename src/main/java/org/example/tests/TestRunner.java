@@ -12,6 +12,9 @@ import org.junit.runner.notification.Failure;
  */
 
 public class TestRunner {
+    /** Метод запускает набор тестов для проверки логики приложения.
+     * @param args не принимает никаких аргументов из командной строки.
+     */
     @SuppressWarnings("checkstyle:hideutilityclassconstructor")
     public static void main(final String[] args) {
         Result result = JUnitCore.runClasses(ListAverageCalculatorTest.class, DoubleListAverageCalculatorTest.class, ListComparatorTest.class);

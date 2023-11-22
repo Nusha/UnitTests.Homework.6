@@ -9,12 +9,20 @@ import org.example.comparator.ListComparator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/**
+ * Это основной класс программы калькулятора, который использует различные классы и интерфейсы из пакетов calculator и comparator.
+ * Он содержит метод main(), который выполняет основную логику программы:
+ * 1. Получает два списка чисел от пользователя через консольный ввод (Integer и Double), проверяет на соответствие типам.
+ * 2. Создает экземпляры классов ListAverageCalculator и DoubleListAverageCalculator для расчета среднего значения каждого списка.
+ * 3. Создает экземпляр класса ListComparator для сравнения средних значений двух списков.
+ * 4. Выводит результат сравнения на консоль.
+ */
 public class Main {
+    /** Основной метод.
+     * @param args не принимает никакие параметры.
+     */
     public static void main(final String[] args) {
-        //
-        //        List<Integer> firstList = Arrays.asList(1, 2, 3, 4, 5);
-        //        List<Double> secondList = Arrays.asList(2.0, 3.0, 4.0, 5.0, 6.0);
+
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> firstList = new ArrayList<>();
