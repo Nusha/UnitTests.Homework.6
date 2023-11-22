@@ -63,7 +63,7 @@ Current scope:     <a href="../../index.html">all classes</a>
     100%
   </span>
   <span class="absValue">
-    (3/3)
+    (4/4)
   </span>
 </td>
 </tr>
@@ -82,9 +82,9 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;public class ListAverageCalculator&lt;T extends Number&gt; implements AverageCalculator {
 &nbsp;    protected List&lt;T&gt; numbers;
 &nbsp;
-<b class="fc">&nbsp;    public ListAverageCalculator(List&lt;T&gt; numbers) {</b>
-<b class="fc">&nbsp;        this.numbers = numbers;</b>
-&nbsp;    }
+<b class="fc">&nbsp;    public ListAverageCalculator(final List&lt;T&gt; inNumbers) {</b>
+<b class="fc">&nbsp;        this.numbers = inNumbers;</b>
+<b class="fc">&nbsp;    }</b>
 &nbsp;
 &nbsp;    public double calculateAverage() {
 <b class="fc">&nbsp;        return numbers.stream().mapToInt(val -&gt; (int) val).average().orElse(0.0);</b>
@@ -114,7 +114,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2023-11-21 04:29</div>
+    <div style="float:right;">generated on 2023-11-22 05:27</div>
 </div>
 </body>
 </html>
