@@ -1,4 +1,4 @@
-package org.example;
+
 /**
  * Домашнее задание по блоку Unit-тесты;
  * Программа на Java принимает два списка чисел и выполняет следующие действия:
@@ -11,3 +11,5 @@ package org.example;
  * @author Ivan B.
  * @version 0.0.1
  */
+package org.example;
+
