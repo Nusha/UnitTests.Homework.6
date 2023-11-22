@@ -15,6 +15,7 @@ import static org.junit.Assert.assertFalse;
  *
  * @author Ivan
  */
+
 public class DoubleListAverageCalculatorTest {
     /**
      * Тест проверяет, что среднее значение списка чисел с плавающей точкой корректно вычисляется.

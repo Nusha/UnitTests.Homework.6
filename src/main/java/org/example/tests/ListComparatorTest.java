@@ -2,12 +2,15 @@ package org.example.tests;
 
 import org.example.calculator.ListAverageCalculator;
 import org.example.comparator.ListComparator;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 /**
  * Класс ListComparatorTest содержит тесты для класса ListComparator.
@@ -65,4 +68,13 @@ public class ListComparatorTest {
         assertEquals("Средние значения равны", listComparator.compare());
     }
     //CHECKSTYLE:ON: checkstyle:magicnumber
-}
+
+    @Test
+    public void testCompareNull() {
+    assertThrows(IllegalArgumentException.class, () -> {
+        ListAverageCalculator firstListCalculator = null;
+        ListAverageCalculator secondListCalculator = null;
+
+        ListComparator listComparator = new ListComparator(firstListCalculator, secondListCalculator);});
+    }
+    }

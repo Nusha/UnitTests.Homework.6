@@ -1,0 +1,136 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251"> 
+  <title>Coverage Report > ListAverageCalculator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example.calculator</a>
+</div>
+
+<h1>Coverage Summary for Class: ListAverageCalculator (org.example.calculator)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ListAverageCalculator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example.calculator;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;/**
+&nbsp; * Этот класс используется для расчета среднего значения списка чисел.
+&nbsp; * Он реализует интерфейс AverageCalculator и предоставляет метод для расчета среднего значения списка.
+&nbsp; *
+&nbsp; * @param &lt;T&gt; тип чисел в списке, должен быть подклассом Number.
+&nbsp; */
+&nbsp;public class ListAverageCalculator&lt;T extends Number&gt; implements AverageCalculator {
+&nbsp;    /**
+&nbsp;     * Список чисел, для которых рассчитывается среднее значение.
+&nbsp;     */
+&nbsp;    protected List&lt;T&gt; numbers;
+&nbsp;    /**
+&nbsp;     * Конструктор для ListAverageCalculator.
+&nbsp;     *
+&nbsp;     * @param inNumbers список чисел, для которых будет рассчитываться среднее значение.
+&nbsp;     */
+<b class="fc">&nbsp;    public ListAverageCalculator(final List&lt;T&gt; inNumbers) {</b>
+<b class="fc">&nbsp;        this.numbers = inNumbers;</b>
+&nbsp;    }
+&nbsp;    /**
+&nbsp;     * Метод вычисляет среднее значение списка чисел.
+&nbsp;     *
+&nbsp;     * @return среднее значение списка чисел.
+&nbsp;     */
+&nbsp;    public double calculateAverage() {
+<b class="fc">&nbsp;        return numbers.stream().mapToInt(val -&gt; (int) val).average().orElse(0.0);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-11-22 22:24</div>
+</div>
+</body>
+</html>
